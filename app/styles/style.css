@@ -1,71 +1,24 @@
+/**
+ * Stylin on u
+ */
+
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Helvetica, Arial, sans-serif;
     font-size: 1em;
     padding: 1em;
+    background: #313137;
+    color: #CACACA;
+    -webkit-font-smoothing: antialiased;
 }
 
-table {
-    margin: 0 auto;
-    border-spacing: 0;
-    border-collapse: collapse;
+.pure-form input[type=text], .pure-form input[type=password], .pure-form input[type=email], .pure-form input[type=url], .pure-form input[type=date], .pure-form input[type=month], .pure-form input[type=time], .pure-form input[type=datetime], .pure-form input[type=datetime-local], .pure-form input[type=week], .pure-form input[type=number], .pure-form input[type=search], .pure-form input[type=tel], .pure-form input[type=color], .pure-form select, .pure-form textarea {
+border: 1px solid #28282E;
 }
 
-table.column {
-    border-collapse: collapse;
-    background-color: #FFFFFF;
-    padding: 0.5em;
-    width: 35em;
-}
-
-td {
-    font-size: 1em;
-    padding: 0.1em 0.25em;
-    -moz-border-radius: 1em;
-    -webkit-border-radius: 1em;
-    border-radius: 1em;
-}
-
-td.colleft {
-    text-align: right;
-    width: 35%;
-}
-
-td.colrite {
-    text-align: left;
-    width: 65%;
-}
-
-fieldset {
-    padding: 1em 1em 1em 1em;
-    margin: 0 2em;
-    border-radius: 1.5em;
-    -webkit-border-radius: 1em;
-    -moz-border-radius: 1em;
-}
-
-fieldset.inner {
-    width: 40%;
-}
-
-fieldset:hover, tr:hover {
-    background-color: #fafafa;
-}
-
-legend {
-    font-weight: bold;
-    font-size: 1.1em;
-}
-
-div.column-left {
-    float: left;
-    width: 45em;
-    height: 31em;
-}
-
-div.column-right {
-    display: inline;
-    width: 45em;
-    max-height: 31em;
+.pure-form legend {
+    color: #888;
+    font-size: 1.5em;
+    border-bottom: 1px solid #BAD4EB;
 }
 
 input.radio {
