@@ -79,52 +79,67 @@
         echo "display: none;";
         } ?>">
                 <span style="margin:1.25em 0; display:block;"><strong>SMTP Specific Options:</strong></span>
-                <label for="smtp_debug">SMTP Debug ?</label>
 
-                    <select size="1" id="smtp_debug" name="smtp_debug">
-                        <option <?php echo ($smtp_debug == '0') ? 'selected' : ''; ?> value="0">
-                            0 - Disabled
-                        </option>
-                        <option <?php echo ($smtp_debug == '1') ? 'selected' : ''; ?> value="1">
-                            1 - Client messages
-                        </option>
-                        <option <?php echo ($smtp_debug == '2') ? 'selected' : ''; ?> value="2">
-                            2 - Client and server messages
-                        </option>
-                    </select>
+                    <div class="pure-control-group">
+                        <label for="smtp_debug">SMTP Debug ?</label>
+                        <select size="1" id="smtp_debug" name="smtp_debug">
+                            <option <?php echo ($smtp_debug == '0') ? 'selected' : ''; ?> value="0">
+                                0 - Disabled
+                            </option>
+                            <option <?php echo ($smtp_debug == '1') ? 'selected' : ''; ?> value="1">
+                                1 - Client messages
+                            </option>
+                            <option <?php echo ($smtp_debug == '2') ? 'selected' : ''; ?> value="2">
+                                2 - Client and server messages
+                            </option>
+                        </select>
+                    </div>
 
-                    <label for="smtp_server">SMTP Server</label>
-                        <input type="text" id="smtp_server" name="smtp_server"
-                               value="<?php echo $smtp_server; ?>" 
-                               placeholder="smtp.server.com">
+                    <div class="pure-control-group">
+                        <label for="smtp_server">SMTP Server</label>
+                        <input class="pure-input-1-2" type="text" id="smtp_server" name="smtp_server"
+                                   value="<?php echo $smtp_server; ?>" 
+                                   placeholder="smtp.server.com">
+                    </div>
 
-                    <label for="smtp_port">SMTP Port</label>
+                    <div class="pure-control-group">
+                        <label for="smtp_port">SMTP Port</label>
                         <input type="text" name="smtp_port" id="smtp_port" size="3"
                                value="<?php echo $smtp_port; ?>" placeholder="Port">
+                   </div>
 
-                    <label for="smtp_secure">SMTP Security</label>
+                    <div class="pure-control-group">
+                        <label for="smtp_secure">SMTP Security</label>
                         <select size="1" name="smtp_secure" id="smtp_secure">
                             <option <?php echo ($smtp_secure == 'none') ? 'selected' : '' ?>>None</option>
                             <option <?php echo ($smtp_secure == 'tls') ? 'selected' : '' ?>>TLS</option>
                             <option <?php echo ($smtp_secure == 'ssl') ? 'selected' : '' ?>>SSL</option>
                         </select>
-                    <label for="smtp-authenticate">SMTP Authenticate?</label>
+                    </div>
+
+                    <div class="pure-control-group">
+                        <label for="smtp-authenticate">SMTP Authenticate?</label>
                         <input type="checkbox" id="smtp-authenticate"
                                name="smtp_authenticate"
-<?php if ($smtp_authenticate != '') {
-echo "checked";
-} ?>
+                            <?php if ($smtp_authenticate != '') {
+                            echo "checked";
+                            } ?>
                                value="<?php echo $smtp_authenticate; ?>">
+                   </div>
 
-                    <label for="authenticate_username">Authenticate Username</label>
+                   <div class="pure-control-group">
+                        <label for="authenticate_username">Authenticate Username</label>
                         <input type="text" id="authenticate_username" name="authenticate_username"
-                               value="<?php echo $authenticate_username; ?>" 
-                               placeholder="SMTP Server Username">
+                                   value="<?php echo $authenticate_username; ?>" 
+                                   placeholder="SMTP Server Username">
+                   </div>
 
-                    <label for="authenticate_password">Authenticate Password</label>
-                            <input type="password" name="authenticate_password" id="authenticate_password"
+                   <div class="pure-control-group">
+                        <label for="authenticate_password">Authenticate Password</label>
+                        <input type="password" name="authenticate_password" id="authenticate_password"
                                    value="<?php echo $authenticate_password; ?>" 
                                    placeholder="SMTP Server Password">
+                    </div>
             </div>
         </fieldset>
     </div>

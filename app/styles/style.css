@@ -2,11 +2,17 @@
  * Stylin on u
  */
 
+ html {
+   box-sizing: border-box;
+ }
+ *, *:before, *:after {
+   box-sizing: inherit;
+ }
+
 body {
     font-family: Helvetica, Arial, sans-serif;
     font-size: 1em;
-    padding: 1em;
-    background: #313137;
+    background: #043347;
     color: #CACACA;
     -webkit-font-smoothing: antialiased;
 }
@@ -16,9 +22,20 @@ border: 1px solid #28282E;
 }
 
 .pure-form legend {
-    color: #888;
+    color: white;
     font-size: 1.5em;
-    border-bottom: 1px solid #BAD4EB;
+    border-bottom: 0;
+    background: #F7442D;
+    padding: 10px;
+    margin-bottom: 40px;
+}
+
+.pure-control-group {
+    padding: 0 20px;
+}
+
+.pure-u-1 {
+    text-align: center;
 }
 
 input.radio {
