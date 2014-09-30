@@ -118,7 +118,7 @@ try {
         $mail->Subject = $_POST['Subject'];
 
         if ($_POST['Message'] == '') {
-            $body = file_get_contents('contents.html');
+            $body = file_get_contents('content.html');
         } else {
             $body = $_POST['Message'];
         }
