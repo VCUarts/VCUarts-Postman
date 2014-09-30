@@ -4,7 +4,6 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
     <title>VCUarts Postman</title>
-    <link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.5.0/pure-min.css">
     <link rel="stylesheet" href="styles/style.css">
     <script src="scripts/main.js"></script>
 
@@ -18,15 +17,7 @@
               "cc_Email": "<?php echo $cc_email; ?>",
               "bcc_Email": "<?php echo $bcc_email; ?>",
               "Subject": "<?php echo $subject; ?>",
-              "Message": "<?php echo $message; ?>",
-              "test_type": "<?php echo $test_type; ?>",
-              "smtp_debug": "<?php echo $smtp_debug; ?>",
-              "smtp_server": "<?php echo $smtp_server; ?>",
-              "smtp_port": "<?php echo $smtp_port; ?>",
-              "smtp_secure": "<?php echo $smtp_secure; ?>",
-              "smtp_authenticate": "<?php echo $smtp_authenticate; ?>",
-              "authenticate_username": "<?php echo $authenticate_username; ?>",
-              "authenticate_password": "<?php echo $authenticate_password; ?>"
+              "Message": "<?php echo $message; ?>"
           };
 
           var resetForm = document.createElement("form");

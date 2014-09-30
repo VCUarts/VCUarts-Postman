@@ -17,31 +17,86 @@ body {
     -webkit-font-smoothing: antialiased;
 }
 
-.pure-form input[type=text], .pure-form input[type=password], .pure-form input[type=email], .pure-form input[type=url], .pure-form input[type=date], .pure-form input[type=month], .pure-form input[type=time], .pure-form input[type=datetime], .pure-form input[type=datetime-local], .pure-form input[type=week], .pure-form input[type=number], .pure-form input[type=search], .pure-form input[type=tel], .pure-form input[type=color], .pure-form select, .pure-form textarea {
-border: 1px solid #28282E;
+.form-content {
+    width: 650px;
+    margin: 0 auto;
+    margin-top: 40px;
 }
 
-.pure-form legend {
+fieldset {
+    border: 5px solid #04212F;
+    padding: 35px;
+}
+
+legend {
     color: white;
     font-size: 1.5em;
     border-bottom: 0;
     background: #F7442D;
     padding: 10px;
-    margin-bottom: 40px;
 }
 
-.pure-control-group {
-    padding: 0 20px;
+label {
+    width: 100%;
+    display: block;
+    margin-bottom: 5px;
 }
 
-.pure-u-1 {
+input[type=text] {
+    width: 100%;
+    display: block;
+    padding: 10px;
+    margin-bottom: 25px;
+    border: 1px solid #04212F;
+}
+textarea {
+    width: 100%;
+    display: block;
+    padding: 10px;
+    border: 1px solid #04212F;
+    min-height: 100px;
+}
+input[type=submit] {
+    width: 100%;
+    display: block;
+    background: #F7442D;
+    padding: 20px 0;
+    margin: 40px 0;
+    border: 0;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: .055em;
+    -webkit-font-smoothing: antialiased;
+    cursor: pointer;
+}
+
+.half {
+    display: inline-block;
+    width: 48%;
+}
+.half:nth-of-type(even)  {
+    float: right;
+}
+
+hr {
+    border: 0;
+    height: 3px;
+    background: #04212F;
+    margin-bottom: 25px;
+}
+
+.yay {
     text-align: center;
+    color: white;
 }
-
-input.radio {
-    float: left;
-}
-
-div.radio {
-    padding: 0.2em;
+.start-over {
+    width: 100px;
+    margin: 0 auto;
+    display: block;
+    background: #04212F;
+    color: white;
+    border: 0;
+    padding: 10px 0;
+    cursor: pointer;
 }

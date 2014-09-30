@@ -104,12 +104,12 @@ if (version_compare(PHP_VERSION, '5.0.0', '<')) {
 
 if (count($results_messages) > 0) {
     foreach ($results_messages as $result) {
-        echo "<h2>$result</h2>";
+        echo "<h2 class=\"yay\">$result</h2>";
     }
 }
 
 if (isset($_POST["submit"]) && $_POST["submit"] == "Submit") {
-    echo "<button type=\"submit\" onclick=\"startAgain();\">Start Over</button><br>\n";
+    echo "<button type=\"submit\" class=\"start-over\" onclick=\"startAgain();\">START OVER</button><br>\n";
 }
 
 include 'form.php'; 
