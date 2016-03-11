@@ -1,4 +1,4 @@
-# VCUarts Postman - A test in sending electronic mail
+# A test in sending electronic mail
 
 Forked and messed with from: [PHPMailer](https://github.com/PHPMailer/PHPMailer)
 
